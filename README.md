@@ -11,6 +11,10 @@ install libusb-win32 filter driver (/bin/<arch>/install-filter-win.exe) onto lau
 
 install pyusb-0.4.3.win32
 
+copy libusb0_x86.dll and libusb.sys from libusb-win32.zip (/bin/x86/libusb0*) into /<PythonInstallDir>/Lib/site-packages
+
+rename /<PythonInstallDir>/Lib/site-packages/libusb0_x86.dll to /<PythonInstallDir>/Lib/site-packages/libusb0.dll
+
 run script.py and hopefully the thing fires! or at least dumps out some useful debug info to the terminal...
 
 ### next steps ###
